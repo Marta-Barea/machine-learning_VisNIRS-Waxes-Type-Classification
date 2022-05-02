@@ -5,7 +5,7 @@
 ###############################################################################
 
 ###############################################################################
-########## Support Vector Machine (SVM) Radial Basis Function (RBF) ###########
+############# Support Vector Machine (SVM) with Gaussian Kernel ###############
 ###############################################################################
 
 # Loading Packages
@@ -119,7 +119,7 @@ accuracy_gridsearch <- matrix((svm_radial[["results"]][["Accuracy"]] * 100), nco
 kappa_gridsearch <- matrix(svm_radial[["results"]][["Kappa"]], ncol = 41, nrow = 41)
 
 cost_expression <- expression(log[2] ~ C)
-gamma_expression <- expression(log[2] ~ γ)
+gamma_expression <- expression(log[2] ~ σ)
 
 filled.contour(x = c(seq(-10,10,length.out = 41)),
                y = c(seq(-10,10,length.out = 41)),
