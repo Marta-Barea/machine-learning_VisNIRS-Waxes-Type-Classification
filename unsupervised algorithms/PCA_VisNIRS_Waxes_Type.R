@@ -1,13 +1,3 @@
-###############################################################################
-####### Application of a system based on Vis-NIRS and Machine Learning ########
-################### for the analysis of petroleum waxes #######################
-######################## Marta Barea-Sepúlveda ################################
-###############################################################################
-
-###############################################################################
-#################### Principal Components Analysis (PCA) ######################
-###############################################################################
-
 # Loading Packages
 
 library(doParallel)
@@ -101,7 +91,7 @@ loadings_plot <- ggplot(ld, aes(x = rn, y = value, fill = variable)) +
         axis.title = element_text(size = 8)) +
   labs(x = "Wavelength (nm)", y = "Loadings PCs", title = "") +
   scale_x_discrete(limits = loadings$rn,
-                   breaks = loadings$rn[seq(1, length(loadings$rn), by = 50)]) +
+                   breaks = loadings$rn[seq(1, length(loadings$rn), by = 100)]) +
   scale_fill_manual(values = c("#4DAD83", "#ED9525")) +
   geom_hline(yintercept = c(0.05, -0.05), linetype = "dotted")
   
