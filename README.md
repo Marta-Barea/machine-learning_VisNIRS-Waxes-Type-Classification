@@ -28,6 +28,6 @@ All data analysis was performed with **R (version 4.1.2)**. The software and pac
 ## Usage
 
 1. Clone the repository.
-2. Ensure that the necessary versions of RStudio and packages are installed.
+2. Ensure that the necessary versions of R and packages are installed.
 3. Navigate to the respective folders and run the scripts to reproduce the results or launch the Shiny app.
 
